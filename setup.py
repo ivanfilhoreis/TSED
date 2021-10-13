@@ -11,7 +11,7 @@ import sys
 from setuptools import setup, find_packages
 
 setup(
-    name="tsed",
+    name="TSED",
     packages=find_packages(exclude=["notebooks", "docs"]),
     version="1.0",
     author="Ivan José dos Reis Filho",
