@@ -10,7 +10,7 @@ from typing import List, Union, Tuple
 from nltk.stem.snowball import SnowballStemmer
 from tqdm import tqdm
 
-class tsed_b():
+class tsed_bow():
     
     def __init__(self, 
                  df_ts: pd.DataFrame, 
