@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 import numpy as np
 import nltk
+nltk.download('punkt')
 import re
 from keybert import KeyBERT
 from typing import List, Union, Tuple
