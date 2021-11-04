@@ -10,7 +10,7 @@ from typing import List, Union, Tuple
 from nltk.stem.snowball import SnowballStemmer
 from tqdm import tqdm
 
-class tsed():
+class tsed_bow():
     
     def __init__(self, 
                  df_ts: pd.DataFrame, 
@@ -83,7 +83,7 @@ class tsed():
         self.kbert_seed_keywords = kbert_seed_keywords
         self.normalize = normalize
           
-    def build_tsed(self):
+    def build_tsed_bow(self):
         
         df = self.concatenate_dfs()
         text = self.Text_PreProcessing(df[self.df_column_tx])
