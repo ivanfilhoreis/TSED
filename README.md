@@ -22,8 +22,8 @@ df2 = pd.read_excel('news.xlsx') # Textual data
 
 df3 = tsed_bow(df1, 
                df2,
-               df_column_tx =  'News', 
-               column_concatene = 'Date', 
+               df_column_tx = 'News', # column of the df2 that contains the text. 
+               column_concatene = 'Date', #index/column used to merge df1 and df2. Default: 'Date'
                weighting='tf-idf', 
                ngram_range = (1,1), 
                stemmer=True, 
@@ -35,7 +35,7 @@ df3.build_tsed_bow()
 
 ```
 
-Use KeyBert to get important words from texts and assign BoW vocabulary/terms.
+Use [KeyBert](https://github.com/ivanfilhoreis/KeyBERT/) to get important words from texts and assign BoW vocabulary/terms.
 
 ```
 df4 = tsed_bow(df1, 
@@ -52,3 +52,4 @@ df4.build_tsed_bow()
 
 ```
 
+[Click here](https://colab.research.google.com/drive/1hQxVviNUwvWvKnytS9fg3ecXmkawMxqs?usp=sharing) to view others representations models and results.
