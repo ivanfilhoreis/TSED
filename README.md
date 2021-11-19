@@ -52,4 +52,9 @@ df4.build_tsed_bow()
 
 ```
 
-[Click here](https://colab.research.google.com/drive/1hQxVviNUwvWvKnytS9fg3ecXmkawMxqs?usp=sharing) to view others representations models and results.
+[Click here](https://colab.research.google.com/drive/1hQxVviNUwvWvKnytS9fg3ecXmkawMxqs?usp=sharing) to view others time-series representations models and results.
+
+##3. References
+
+[KeyBert](https://github.com/ivanfilhoreis/KeyBERT/)
+[sklearn.feature_extraction.text](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
