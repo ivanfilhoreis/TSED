@@ -54,9 +54,10 @@ df4.build_tsed_bow()
 
 [Click here](https://colab.research.google.com/drive/1hQxVviNUwvWvKnytS9fg3ecXmkawMxqs?usp=sharing) to view others time-series representations models and results.
 
-# 3. Repositórios
+# 3. Resources and Repos
 
 Below, you can find some resources that were used for the creation of TSED. 
 
-*[KeyBert - https://github.com/ivanfilhoreis/KeyBERT/](https://github.com/ivanfilhoreis/KeyBERT/)
-*[Vectorizers - sklearn.feature_extraction.text](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
+[KeyBert - https://github.com/ivanfilhoreis/KeyBERT/](https://github.com/ivanfilhoreis/KeyBERT/)
+
+[Vectorizers - sklearn.feature_extraction.text](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
