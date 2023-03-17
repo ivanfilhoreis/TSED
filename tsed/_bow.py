@@ -102,7 +102,7 @@ class tsed_bow():
                                             vocabulary=self.vocabulary, 
                                             binary=self.binary)
             tf_fit = tf_vectorizer.fit_transform(text)
-            matrix = pd.DataFrame(tf_fit.todense(), columns=tf_vectorizer.get_feature_names(), index=df[self.column_concatene])
+            matrix = pd.DataFrame(tf_fit.todense(), columns=tf_vectorizer.get_feature_names_out(), index=df[self.column_concatene])
             
         elif self.weighting == 'tf-idf':
             idf_vectorizer = TfidfVectorizer(lowercase = self.lowercase, 
@@ -117,7 +117,7 @@ class tsed_bow():
                                              smooth_idf=self.smooth_idf,
                                              sublinear_tf=self.sublinear_tf)
             idf_fit = idf_vectorizer.fit_transform(text)
-            matrix = pd.DataFrame(idf_fit.todense(), columns=idf_vectorizer.get_feature_names(), index=df[self.column_concatene])
+            matrix = pd.DataFrame(idf_fit.todense(), columns=idf_vectorizer.get_feature_names_out(), index=df[self.column_concatene])
             
         elif self.weighting == 'hashing':
             has_vectorizer = HashingVectorizer(lowercase = self.lowercase, 
